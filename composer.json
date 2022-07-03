@@ -1,0 +1,11 @@
+{
+  "require": {
+    "php": "^8.1.0",
+    "symfony/intl": "*",
+    "twig/intl-extra": "*",
+    "sonata-project/intl-bundle": "*",
+    "twig/twig": "*",
+    "ext-mbstring": "*",
+    "ext-intl" : "*"
+  }
+}
