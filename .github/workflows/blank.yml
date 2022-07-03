@@ -35,9 +35,8 @@ jobs:
           composer install
           composer update
           cat composer.lock
-          git remote list
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v2
         with:
            name: composer
            path: composer.lock
