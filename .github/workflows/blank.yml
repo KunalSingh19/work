@@ -35,3 +35,8 @@ jobs:
           composer install
           composer update
           cat composer.lock
+    steps:
+      - uses: actions/upload-artifact@v3
+        with:
+           name: composer
+           path: composer.lock
