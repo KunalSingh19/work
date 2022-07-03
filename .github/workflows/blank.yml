@@ -35,6 +35,9 @@ jobs:
           composer install
           composer update
           cat composer.lock
+          git commit -m "update"
+          git push origin
+          git remote list
 
       - uses: actions/upload-artifact@v3
         with:
