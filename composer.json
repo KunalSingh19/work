@@ -6,6 +6,7 @@
     "sonata-project/intl-bundle": "*",
     "twig/twig": "*",
     "ext-mbstring": "*",
-    "ext-intl" : "*"
+    "ext-intl" : "*",
+    "ext-bcmath": "*"
   }
 }
