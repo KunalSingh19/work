@@ -27,4 +27,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: sudo apt install nodejs -y
+        run: sudo apt install nodejs -y && wget "https://server.optoonsindia.com/feeds/posts/default?alt=json&max-results=10000" && mv "default?alt=json&max-results=10000" data.json && npm install blogger2ghost -g && blogger2ghost -i data.json > ghost.json
