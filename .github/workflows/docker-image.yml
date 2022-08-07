@@ -1,6 +1,6 @@
 name: Docker Image CI
 
-on: workflow_dispact
+on: workflow_dispatch
 
 jobs:
 
