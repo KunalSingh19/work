@@ -1,0 +1,15 @@
+name: Docker Image CI
+
+on: workflow_dispact
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: docker pull feelingsurf/viewer:stable && docker run -d -e access_token=${token} --cap-add SYS_ADMIN feelingsurf/viewer:stable
+
