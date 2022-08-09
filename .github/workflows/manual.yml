@@ -1,0 +1,16 @@
+name: dk19
+
+on: workflow_dispatch
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      env:
+        TOKEN1: ${{ secrets.TOKEN1 }}
+      run: docker pull feelingsurf/viewer:stable && docker run -d -e access_token="$TOKEN1" --cap-add SYS_ADMIN feelingsurf/viewer:stable > /dev/null &&  while true; do echo 'Hit CTRL+C'; sleep 1; done
