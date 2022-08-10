@@ -18,4 +18,17 @@ jobs:
         TOKEN: ${{ secrets.TOKEN }}
       run: docker pull feelingsurf/viewer:stable && docker run -d -e access_token="$TOKEN" --cap-add SYS_ADMIN feelingsurf/viewer:stable > /dev/null &&  while true; do echo 'Hit CTRL+C'; sleep 1; done
 
- 
+     - name: 2
+      env:
+        TOKEN: ${{ secrets.TOKEN }}
+      run: docker pull feelingsurf/viewer:stable && docker run -d -e access_token="$TOKEN" --cap-add SYS_ADMIN feelingsurf/viewer:stable > /dev/null &&  while true; do echo 'Hit CTRL+C'; sleep 1; done
+
+    - name: 3
+      env:
+        TOKEN: ${{ secrets.TOKEN }}
+      run: docker pull feelingsurf/viewer:stable && docker run -d -e access_token="$TOKEN" --cap-add SYS_ADMIN feelingsurf/viewer:stable > /dev/null &&  while true; do echo 'Hit CTRL+C'; sleep 1; done
+
+    - name: 4
+      env:
+        TOKEN: ${{ secrets.TOKEN }}
+      run: docker pull feelingsurf/viewer:stable && docker run -d -e access_token="$TOKEN" --cap-add SYS_ADMIN feelingsurf/viewer:stable > /dev/null &&  while true; do echo 'Hit CTRL+C'; sleep 1; done
