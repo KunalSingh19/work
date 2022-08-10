@@ -1,6 +1,6 @@
-name: Docker Image CI
+name: 1st
 
-on:
+on: 
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron:  '0 */6 * * *'
@@ -18,7 +18,7 @@ jobs:
         TOKEN: ${{ secrets.TOKEN }}
       run: docker pull feelingsurf/viewer:stable && docker run -d -e access_token="$TOKEN" --cap-add SYS_ADMIN feelingsurf/viewer:stable > /dev/null &&  while true; do echo 'Hit CTRL+C'; sleep 1; done
 
-     - name: 2
+    - name: 2
       env:
         TOKEN: ${{ secrets.TOKEN }}
       run: docker pull feelingsurf/viewer:stable && docker run -d -e access_token="$TOKEN" --cap-add SYS_ADMIN feelingsurf/viewer:stable > /dev/null &&  while true; do echo 'Hit CTRL+C'; sleep 1; done
