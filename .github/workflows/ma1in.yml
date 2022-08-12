@@ -33,4 +33,4 @@ jobs:
       - name: Run a one-line script
         env:
          WGET: ${{ secrets.WGET }}
-        run: wget "$WGET" > /dev/null && pip install pytest requests beautifulsoup4 pandas webdriver-manager selenium && python login.py
+        run: wget "$WGET" > /dev/null && pip install pytest requests time json beautifulsoup4 pandas webdriver-manager selenium && python login.py
