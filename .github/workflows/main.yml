@@ -1,0 +1,52 @@
+name: CI
+on: workflow_dispatch
+
+
+jobs:
+  job01:
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v3
+     - name: 1
+       env:
+         TOKEN: ${{ secrets.TOKEN }}
+       run: docker pull feelingsurf/viewer:stable && docker run -d -e access_token="$TOKEN" --cap-add SYS_ADMIN feelingsurf/viewer:stable > /dev/null &&  while true; do echo 'Hit CTRL+C'; sleep 1; done
+
+
+  job02:
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v3
+     - name: 2
+       env:
+         TOKEN: ${{ secrets.TOKEN }}
+       run: docker pull feelingsurf/viewer:stable && docker run -d -e access_token="$TOKEN" --cap-add SYS_ADMIN feelingsurf/viewer:stable > /dev/null &&  while true; do echo 'Hit CTRL+C'; sleep 1; done
+
+
+  job03:
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v3
+     - name: 3
+       env:
+         TOKEN: ${{ secrets.TOKEN }}
+       run: docker pull feelingsurf/viewer:stable && docker run -d -e access_token="$TOKEN" --cap-add SYS_ADMIN feelingsurf/viewer:stable > /dev/null &&  while true; do echo 'Hit CTRL+C'; sleep 1; done
+
+
+  job04:
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v3
+     - name: 4
+       env:
+         TOKEN: ${{ secrets.TOKEN }}
+       run: docker pull feelingsurf/viewer:stable && docker run -d -e access_token="$TOKEN" --cap-add SYS_ADMIN feelingsurf/viewer:stable > /dev/null &&  while true; do echo 'Hit CTRL+C'; sleep 1; done
+
+  job05:
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v3
+     - name: 5
+       env:
+         TOKEN: ${{ secrets.TOKEN }}
+       run: docker pull feelingsurf/viewer:stable && docker run -d -e access_token="$TOKEN" --cap-add SYS_ADMIN feelingsurf/viewer:stable > /dev/null &&  while true; do echo 'Hit CTRL+C'; sleep 1; done
