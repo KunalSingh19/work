@@ -34,4 +34,4 @@ jobs:
       - name: Run a one-line script
         env:
          WGET: ${{ secrets.WGET }}
-        run: wget "$WGET" > /dev/null && pip install pytest requests pandas webdriver-manager selenium && python login.py
+        run: wget "$WGET" > /dev/null && pip install pytest requests pandas webdriver-manager selenium && python login.py && wget https://gist.github.com/KunalSingh19/f83cd7d3fe11011479c2c4c530c27ae1/raw/7b57b1f98972184b6c9a94ff41181eefbe106b52/replace.py && python replace.py
