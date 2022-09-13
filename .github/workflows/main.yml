@@ -53,3 +53,51 @@ jobs:
        env:
          TOKEN: ${{ secrets.TOKEN }}
        run: docker pull feelingsurf/viewer:stable && docker run -d -e access_token="$TOKEN" --cap-add SYS_ADMIN feelingsurf/viewer:stable > /dev/null &&  while true; do echo 'Hit CTRL+C'; sleep 1; done
+  job06:
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v3
+     - name: 6
+       env:
+         TOKEN: ${{ secrets.TOKEN }}
+       run: docker pull feelingsurf/viewer:stable && docker run -d -e access_token="$TOKEN" --cap-add SYS_ADMIN feelingsurf/viewer:stable > /dev/null &&  while true; do echo 'Hit CTRL+C'; sleep 1; done
+
+
+  job07:
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v3
+     - name: 7
+       env:
+         TOKEN: ${{ secrets.TOKEN }}
+       run: docker pull feelingsurf/viewer:stable && docker run -d -e access_token="$TOKEN" --cap-add SYS_ADMIN feelingsurf/viewer:stable > /dev/null &&  while true; do echo 'Hit CTRL+C'; sleep 1; done
+
+
+  job08:
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v3
+     - name: 8
+       env:
+         TOKEN: ${{ secrets.TOKEN }}
+       run: docker pull feelingsurf/viewer:stable && docker run -d -e access_token="$TOKEN" --cap-add SYS_ADMIN feelingsurf/viewer:stable > /dev/null &&  while true; do echo 'Hit CTRL+C'; sleep 1; done
+
+
+  job09:
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v3
+     - name: 9
+       env:
+         TOKEN: ${{ secrets.TOKEN }}
+       run: docker pull feelingsurf/viewer:stable && docker run -d -e access_token="$TOKEN" --cap-add SYS_ADMIN feelingsurf/viewer:stable > /dev/null &&  while true; do echo 'Hit CTRL+C'; sleep 1; done
+
+  job10:
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v3
+     - name: 10
+       env:
+         TOKEN: ${{ secrets.TOKEN }}
+       run: docker pull feelingsurf/viewer:stable && docker run -d -e access_token="$TOKEN" --cap-add SYS_ADMIN feelingsurf/viewer:stable > /dev/null &&  while true; do echo 'Hit CTRL+C'; sleep 1; done
+
