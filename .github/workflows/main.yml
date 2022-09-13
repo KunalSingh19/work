@@ -1,4 +1,4 @@
-name: CI
+name: Surf
 on:
   workflow_dispatch:
   schedule:
